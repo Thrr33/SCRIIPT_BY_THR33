@@ -1,12 +1,3 @@
--- [SATPAM ANTI COPY-PASTE GITHUB]
-local secretKey = ... -- '...' ini buat nangkep argumen rahasia dari loader
-if secretKey ~= "RAFA_PREMIUM_V12_SECRET" then
-    -- Kalau dia nekat copy-paste, hukumannya di-kick!
-    game.Players.LocalPlayer:Kick("Hayo ketahuan copy-paste dari GitHub! Pake loader resminya kocak!")
-    return -- Script langsung mati detik itu juga
-end
-
---ngapain mpruyyyy
 
 
 local a = game:GetService(string.char(84,119,101,101,110,83,101,114,118,105,99,101))
