@@ -1,426 +1,454 @@
--- Protected by LuaObf v4 (Roblox-safe)
+-- RAFA PRIVATE V12.0 | EMERALD EDITION (CLEAN STREAMER + WARNING)
+local TweenService = game:GetService("TweenService") 
+local ScreenGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local LogoButton = Instance.new("TextButton")
 
-
-local a = game:GetService(string.char(84,119,101,101,110,83,101,114,118,105,99,101))
-local b = Instance.new(string.char(83,99,114,101,101,110,71,117,105))
-if false then local xa=0x2549 end
-local c = Instance.new(string.char(70,114,97,109,101))
-local d = Instance.new(string.char(84,101,120,116,66,117,116,116,111,110))
-
-local e = {
-MainBG = Color3.fromRGB(0xf, 0x12, 0xF),
-TopBar = Color3.fromRGB(0x0, 0xb4, 0x50),
-TabDark = Color3.fromRGB(0x19, 0x1e, 0x19),
-Accent = Color3.fromRGB(0x0, 0xFF, 0x78),
-TextWhite = Color3.fromRGB(0xFF, 0xff, 0xff)
+-- TEMA WARNA HIJAU
+local Theme = {
+    MainBG = Color3.fromRGB(15, 18, 15),
+    TopBar = Color3.fromRGB(0, 180, 80),
+    TabDark = Color3.fromRGB(25, 30, 25),
+    Accent = Color3.fromRGB(0, 255, 120),
+    TextWhite = Color3.fromRGB(255, 255, 255)
 }
-b.Name = string.char(82,97,102,97,95,86,49,50,48,95,69,109,101,114,97,108,100)
-b.Parent = game:GetService(string.char(67,111,114,101,71,117,105))
-b.ResetOnSpawn = false
 
-d.Parent = b
-d.BackgroundColor3 = e.TabDark
-d.Position = UDim2.new(0.05, 0x0, 0.2, 0x0)
-d.Size = UDim2.new(0x0, 0x0, 0x0, 0x0)
-d.Text = string.char(51)
-d.TextColor3 = e.Accent
-d.Font = Enum.Font.GothamBold
-d.TextSize = 0x1E
-d.Visible = false
-d.Draggable = true
-Instance.new(string.char(85,73,67,111,114,110,101,114), d).CornerRadius = UDim.new(0x1, 0x0)
-Instance.new(string.char(85,73,83,116,114,111,107,101), d).Color = e.Accent
+ScreenGui.Name = "Rafa_V120_Emerald"
+ScreenGui.Parent = game:GetService("CoreGui")
+ScreenGui.ResetOnSpawn = false
 
-c.Parent = b
-c.BackgroundColor3 = e.MainBG
-c.Position = UDim2.new(0.4, 0x0, 0.3, 0x0)
-c.Size = UDim2.new(0x0, 0x0, 0x0, 0x0)
-c.Active = true
-c.Draggable = true
-c.ClipsDescendants = true
-Instance.new(string.char(85,73,67,111,114,110,101,114), c)
-Instance.new(string.char(85,73,83,116,114,111,107,101), c).Color = e.Accent
-local f = a:Create(c, TweenInfo.new(0.6, Enum.EasingStyle.Back, Enum.EasingDirection.Out), {Size = UDim2.new(0x0, 0xe6, 0x0, 0x168)})
-f:Play()
+-- LOGO '3'
+LogoButton.Parent = ScreenGui
+LogoButton.BackgroundColor3 = Theme.TabDark
+LogoButton.Position = UDim2.new(0.05, 0, 0.2, 0)
+LogoButton.Size = UDim2.new(0, 0, 0, 0)
+LogoButton.Text = "3"
+LogoButton.TextColor3 = Theme.Accent
+LogoButton.Font = Enum.Font.GothamBold
+LogoButton.TextSize = 30
+LogoButton.Visible = false
+LogoButton.Draggable = true
+Instance.new("UICorner", LogoButton).CornerRadius = UDim.new(1, 0)
+Instance.new("UIStroke", LogoButton).Color = Theme.Accent
 
-if false then local ya=string.char(90,73,76) end
-local g = Instance.new(string.char(70,114,97,109,101), c)
-g.Size = UDim2.new(0x1, 0x0, 0x0, 0x1e)
-g.BackgroundColor3 = e.TopBar
-Instance.new(string.char(85,73,67,111,114,110,101,114), g)
-local h = Instance.new(string.char(84,101,120,116,76,97,98,101,108), g)
-h.Size = UDim2.new(0x1, -0x46, 0x1, 0x0)
-h.Position = UDim2.new(0x0, 0xa, 0x0, 0x0)
-h.Text = string.char(84,72,82,51,51,32,86,49,50,46,48)
-h.TextColor3 = e.TextWhite
-h.Font = Enum.Font.GothamBold
-h.BackgroundTransparency = 0x1
-h.TextXAlignment = Enum.TextXAlignment.Left
-local i = Instance.new(string.char(84,101,120,116,66,117,116,116,111,110), g)
-i.Size = UDim2.new(0x0, 0x19, 0x0, 0x19)
-i.Position = UDim2.new(0x1, -0x37, 0x0, 2.5)
-i.Text = string.char(45)
-i.TextColor3 = e.TextWhite
-i.BackgroundColor3 = Color3.fromRGB(0x28, 0x32, 0x28)
-Instance.new(string.char(85,73,67,111,114,110,101,114), i)
-local j = Instance.new(string.char(84,101,120,116,66,117,116,116,111,110), g)
-j.Size = UDim2.new(0x0, 0x19, 0x0, 0x19)
-j.Position = UDim2.new(0x1, -0x1B, 0x0, 2.5)
-j.Text = string.char(88)
-j.TextColor3 = e.TextWhite
-j.BackgroundColor3 = Color3.fromRGB(0xc8, 0x32, 0x32)
-Instance.new(string.char(85,73,67,111,114,110,101,114), j)
+-- MAIN FRAME 
+MainFrame.Parent = ScreenGui
+MainFrame.BackgroundColor3 = Theme.MainBG
+MainFrame.Position = UDim2.new(0.4, 0, 0.3, 0)
+MainFrame.Size = UDim2.new(0, 0, 0, 0) 
+MainFrame.Active = true
+MainFrame.Draggable = true
+MainFrame.ClipsDescendants = true
+Instance.new("UICorner", MainFrame)
+Instance.new("UIStroke", MainFrame).Color = Theme.Accent
 
-local k = Instance.new(string.char(70,114,97,109,101), c)
-k.Position = UDim2.new(0x0, 0x5, 0x0, 0x23)
-k.Size = UDim2.new(0x1, -0xA, 0x0, 0x1E)
-k.BackgroundTransparency = 0x1
-local l = Instance.new(string.char(84,101,120,116,66,117,116,116,111,110), k)
-l.Size = UDim2.new(0.32, 0x0, 0x1, 0x0)
-l.BackgroundColor3 = e.TopBar
-l.Text = string.char(87,65,82)
-l.TextColor3 = e.TextWhite
-l.Font = Enum.Font.GothamBold
-l.TextSize = 0xb
-Instance.new(string.char(85,73,67,111,114,110,101,114), l)
-local m = Instance.new(string.char(84,101,120,116,66,117,116,116,111,110), k)
-m.Size = UDim2.new(0.32, 0x0, 0x1, 0x0)
-m.Position = UDim2.new(0.34, 0x0, 0x0, 0x0)
-m.BackgroundColor3 = e.TabDark
-m.Text = string.char(70,65,82,77)
-m.TextColor3 = e.TextWhite
-m.Font = Enum.Font.GothamBold
-m.TextSize = 0xb
-Instance.new(string.char(85,73,67,111,114,110,101,114), m)
-local n = Instance.new(string.char(84,101,120,116,66,117,116,116,111,110), k)
-n.Size = UDim2.new(0.32, 0x0, 0x1, 0x0)
-n.Position = UDim2.new(0.68, 0x0, 0x0, 0x0)
-n.BackgroundColor3 = e.TabDark
-if false then local za=0x19A0+0x10EB end
-n.Text = string.char(73,78,70,79)
-n.TextColor3 = e.TextWhite
-n.Font = Enum.Font.GothamBold
-n.TextSize = 0xb
-if false then local Aa=string.char(75,86,67) end
-Instance.new(string.char(85,73,67,111,114,110,101,114), n)
+local openTween = TweenService:Create(MainFrame, TweenInfo.new(0.6, Enum.EasingStyle.Back, Enum.EasingDirection.Out), {Size = UDim2.new(0, 230, 0, 360)})
+openTween:Play()
 
-local function o()
-local p = Instance.new(string.char(83,99,114,111,108,108,105,110,103,70,114,97,109,101), c)
-p.Position = UDim2.new(0x0, 0xa, 0x0, 0x4b)
-p.Size = UDim2.new(0x1, -0x14, 0x1, -0x55)
-p.BackgroundTransparency = 0x1
-p.ScrollBarThickness = 0x2
-p.ScrollBarImageColor3 = e.Accent
-p.Visible = false
-Instance.new(string.char(85,73,76,105,115,116,76,97,121,111,117,116), p).Padding = UDim.new(0x0, 0x8)
-return p
-end
-local q = o()
-q.Visible = true
-local r = o()
-local s = o()
-if false then local Ba=0x22e8+0x1F18 end
+-- BAR ATAS
+local WarBar = Instance.new("Frame", MainFrame)
+WarBar.Size = UDim2.new(1, 0, 0, 30)
+WarBar.BackgroundColor3 = Theme.TopBar
+Instance.new("UICorner", WarBar)
 
+local WarLabel = Instance.new("TextLabel", WarBar)
+WarLabel.Size = UDim2.new(1, -70, 1, 0)
+WarLabel.Position = UDim2.new(0, 10, 0, 0)
+WarLabel.Text = "THR33 V12.0"
+WarLabel.TextColor3 = Theme.TextWhite
+WarLabel.Font = Enum.Font.GothamBold
+WarLabel.BackgroundTransparency = 1
+WarLabel.TextXAlignment = Enum.TextXAlignment.Left
 
+local MinBtn = Instance.new("TextButton", WarBar)
+MinBtn.Size = UDim2.new(0, 25, 0, 25)
+MinBtn.Position = UDim2.new(1, -55, 0, 2.5)
+MinBtn.Text = "-"
+MinBtn.TextColor3 = Theme.TextWhite
+MinBtn.BackgroundColor3 = Color3.fromRGB(40, 50, 40)
+Instance.new("UICorner", MinBtn)
 
-local t = Instance.new(string.char(84,101,120,116,76,97,98,101,108), s)
-t.Size = UDim2.new(0x1, 0x0, 0x0, 0x19)
-t.BackgroundTransparency = 0x1
-t.Text = string.char(83,79,67,73,65,76,32,77,69,68,73,65)
-t.TextColor3 = e.Accent
-t.Font = Enum.Font.GothamBold
-if false then local Ca=string.char(87,77,78) end
-local u = Instance.new(string.char(84,101,120,116,76,97,98,101,108), s)
-u.Size = UDim2.new(0x1, 0x0, 0x0, 0x1e)
-u.BackgroundColor3 = e.TabDark
-u.Text = "🎵 TikTok: @hendriix"
-u.TextColor3 = e.TextWhite
-u.Font = Enum.Font.GothamSemibold
-Instance.new(string.char(85,73,67,111,114,110,101,114), u)
-local v = Instance.new(string.char(84,101,120,116,76,97,98,101,108), s)
-v.Size = UDim2.new(0x1, 0x0, 0x0, 0x1E)
-v.BackgroundColor3 = e.TabDark
-v.Text = "💬 Discord: discord.gg/rafa"
-v.TextColor3 = e.TextWhite
-v.Font = Enum.Font.GothamSemibold
-Instance.new(string.char(85,73,67,111,114,110,101,114), v)
+local CloseBtn = Instance.new("TextButton", WarBar)
+CloseBtn.Size = UDim2.new(0, 25, 0, 25)
+CloseBtn.Position = UDim2.new(1, -27, 0, 2.5)
+CloseBtn.Text = "X"
+CloseBtn.TextColor3 = Theme.TextWhite
+CloseBtn.BackgroundColor3 = Color3.fromRGB(200, 50, 50)
+Instance.new("UICorner", CloseBtn)
 
-local w = Instance.new(string.char(70,114,97,109,101), s)
-w.Size = UDim2.new(0x1, 0x0, 0x0, 0x46)
-w.BackgroundColor3 = Color3.fromRGB(0x28, 0xa, 0xa)
-Instance.new(string.char(85,73,67,111,114,110,101,114), w)
-Instance.new(string.char(85,73,83,116,114,111,107,101), w).Color = Color3.fromRGB(0xff, 0x32, 0x32)
-local x = Instance.new(string.char(84,101,120,116,76,97,98,101,108), w)
-if false then local Da=0x473+0x580 end
-x.Size = UDim2.new(0x1, -0xa, 0x1, -0xa)
-x.Position = UDim2.new(0x0, 0x5, 0x0, 0x5)
-x.BackgroundTransparency = 0x1
-x.Text = "⚠️ USE AT YOUR OWN RISK ⚠️\nWe are not responsible for any bans or account resets."
-x.TextColor3 = Color3.fromRGB(0xff, 0x64, 0x64)
-x.TextWrapped = true
-x.Font = Enum.Font.GothamBold
+-- TAB SYSTEM
+local TabBar = Instance.new("Frame", MainFrame)
+TabBar.Position = UDim2.new(0, 5, 0, 35)
+TabBar.Size = UDim2.new(1, -10, 0, 30)
+TabBar.BackgroundTransparency = 1
 
-local y = true
-local z = {BoxESP = false, TPNoClip = false, FakeName = false, InvScan = false, AutoCook = false, InstantInteract = false}
-local A = {}
-local B = 0x0
+local WarTabBtn = Instance.new("TextButton", TabBar)
+WarTabBtn.Size = UDim2.new(0.32, 0, 1, 0)
+WarTabBtn.BackgroundColor3 = Theme.TopBar
+WarTabBtn.Text = "WAR"
+WarTabBtn.TextColor3 = Theme.TextWhite
+WarTabBtn.Font = Enum.Font.GothamBold
+WarTabBtn.TextSize = 11
+Instance.new("UICorner", WarTabBtn)
 
-local C = string.char(82,97,102,97,32,65,100,109,105,110)
-local D = string.char(65,108,101,120,97,110,100,101,114,32,70,97,107,101)
+local FarmTabBtn = Instance.new("TextButton", TabBar)
+FarmTabBtn.Size = UDim2.new(0.32, 0, 1, 0)
+FarmTabBtn.Position = UDim2.new(0.34, 0, 0, 0)
+FarmTabBtn.BackgroundColor3 = Theme.TabDark
+FarmTabBtn.Text = "FARM"
+FarmTabBtn.TextColor3 = Theme.TextWhite
+FarmTabBtn.Font = Enum.Font.GothamBold
+FarmTabBtn.TextSize = 11
+Instance.new("UICorner", FarmTabBtn)
 
-local function E(F, G)
-q.Visible = false; r.Visible = false; s.Visible = false
-l.BackgroundColor3 = e.TabDark; m.BackgroundColor3 = e.TabDark; n.BackgroundColor3 = e.TabDark
-G.Visible = true
-F.BackgroundColor3 = e.TopBar
-end
-l.MouseButton1Click:Connect(function() E(l, q) end)
-m.MouseButton1Click:Connect(function() E(m, r) end)
-n.MouseButton1Click:Connect(function() E(n, s) end)
-i.MouseButton1Click:Connect(function()
-local H = a:Create(c, TweenInfo.new(0.4, Enum.EasingStyle.Back, Enum.EasingDirection.In), {Size = UDim2.new(0x0, 0x0, 0x0, 0x0)})
-H:Play()
-H.Completed:Wait()
-c.Visible = false
-d.Visible = true
-a:Create(d, TweenInfo.new(0.4, Enum.EasingStyle.Back, Enum.EasingDirection.Out), {Size = UDim2.new(0x0, 0x32, 0x0, 0x32)}):Play()
-end)
-if false then local Ea=0x1eb8+0x1f1b end
-d.MouseButton1Click:Connect(function()
-local I = a:Create(d, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {Size = UDim2.new(0x0, 0x0, 0x0, 0x0)})
-I:Play()
-I.Completed:Wait()
-d.Visible = false
-c.Visible = true
-a:Create(c, TweenInfo.new(0.5, Enum.EasingStyle.Back, Enum.EasingDirection.Out), {Size = UDim2.new(0x0, 0xe6, 0x0, 0x168)}):Play()
-end)
-j.MouseButton1Click:Connect(function()
-y = false
-for _, box in pairs(A) do if box then box:Remove() end end
-A = {}
-b:Destroy()
-end)
-local function J(K, L, M)
-local N = Instance.new(string.char(84,101,120,116,66,117,116,116,111,110), K)
-N.Size = UDim2.new(0x1, 0x0, 0x0, 0x23)
-N.BackgroundColor3 = e.TabDark
-N.Text = L .. string.char(32,91,79,70,70,93)
-N.TextColor3 = e.TextWhite
-N.Font = Enum.Font.GothamSemibold
-N.TextSize = 0xA
-Instance.new(string.char(85,73,67,111,114,110,101,114), N)
-Instance.new(string.char(85,73,83,116,114,111,107,101), N).Color = Color3.fromRGB(0x32, 0x3C, 0x32)
-N.MouseButton1Click:Connect(function()
-z[M] = not z[M]
-N.TextColor3 = z[M] and e.Accent or e.TextWhite
-N.Text = L .. (z[M] and string.char(32,91,79,78,93) or string.char(32,91,79,70,70,93))
-N.UIStroke.Color = z[M] and e.Accent or Color3.fromRGB(0x32, 0x3c, 0x32)
-end)
-return N
-if false then local Fa=string.char(81,87,74) end
+local InfoTabBtn = Instance.new("TextButton", TabBar)
+InfoTabBtn.Size = UDim2.new(0.32, 0, 1, 0)
+InfoTabBtn.Position = UDim2.new(0.68, 0, 0, 0)
+InfoTabBtn.BackgroundColor3 = Theme.TabDark
+InfoTabBtn.Text = "INFO"
+InfoTabBtn.TextColor3 = Theme.TextWhite
+InfoTabBtn.Font = Enum.Font.GothamBold
+InfoTabBtn.TextSize = 11
+Instance.new("UICorner", InfoTabBtn)
+
+-- PAGES
+local function createPage()
+    local page = Instance.new("ScrollingFrame", MainFrame)
+    page.Position = UDim2.new(0, 10, 0, 75)
+    page.Size = UDim2.new(1, -20, 1, -85)
+    page.BackgroundTransparency = 1
+    page.ScrollBarThickness = 2
+    page.ScrollBarImageColor3 = Theme.Accent
+    page.Visible = false
+    Instance.new("UIListLayout", page).Padding = UDim.new(0, 8)
+    return page
 end
 
+local WarPage = createPage()
+WarPage.Visible = true
+local FarmPage = createPage()
+local InfoPage = createPage()
 
+-- ==========================================
+-- [TAB INFO - SOSMED & WARNING]
+-- ==========================================
+local InfoTitle = Instance.new("TextLabel", InfoPage)
+InfoTitle.Size = UDim2.new(1, 0, 0, 25)
+InfoTitle.BackgroundTransparency = 1
+InfoTitle.Text = "SOCIAL MEDIA"
+InfoTitle.TextColor3 = Theme.Accent
+InfoTitle.Font = Enum.Font.GothamBold
 
-J(q, string.char(73,110,115,116,97,110,116,32,73,110,116,101,114,97,99,116), string.char(73,110,115,116,97,110,116,73,110,116,101,114,97,99,116))
-J(q, string.char(73,110,118,101,110,116,111,114,121,32,83,99,97,110,110,101,114), string.char(73,110,118,83,99,97,110))
-J(q, string.char(66,111,120,32,69,83,80), string.char(66,111,120,69,83,80))
-J(q, string.char(66,108,105,110,107,32,84,80,32,91,84,93), string.char(84,80,78,111,67,108,105,112))
+local TikTokLbl = Instance.new("TextLabel", InfoPage)
+TikTokLbl.Size = UDim2.new(1, 0, 0, 30)
+TikTokLbl.BackgroundColor3 = Theme.TabDark
+TikTokLbl.Text = "🎵 TikTok: @hendriix"
+TikTokLbl.TextColor3 = Theme.TextWhite
+TikTokLbl.Font = Enum.Font.GothamSemibold
+Instance.new("UICorner", TikTokLbl)
 
+local DiscordLbl = Instance.new("TextLabel", InfoPage)
+DiscordLbl.Size = UDim2.new(1, 0, 0, 30)
+DiscordLbl.BackgroundColor3 = Theme.TabDark
+DiscordLbl.Text = "💬 Discord: discord.gg/rafa"
+DiscordLbl.TextColor3 = Theme.TextWhite
+DiscordLbl.Font = Enum.Font.GothamSemibold
+Instance.new("UICorner", DiscordLbl)
 
+-- INI DIA WARNINGNYA BALIK LAGI
+local WarningFrame = Instance.new("Frame", InfoPage)
+WarningFrame.Size = UDim2.new(1, 0, 0, 70)
+WarningFrame.BackgroundColor3 = Color3.fromRGB(40, 10, 10)
+Instance.new("UICorner", WarningFrame)
+Instance.new("UIStroke", WarningFrame).Color = Color3.fromRGB(255, 50, 50)
 
-local O = Instance.new(string.char(84,101,120,116,76,97,98,101,108), r)
-O.Size = UDim2.new(0x1, 0x0, 0x0, 0x1e)
-O.BackgroundColor3 = e.TabDark
-O.Text = string.char(77,97,115,97,107,58,32,48)
-O.TextColor3 = e.Accent
-O.Font = Enum.Font.GothamBold
-Instance.new(string.char(85,73,67,111,114,110,101,114), O)
-local P = Instance.new(string.char(84,101,120,116,66,117,116,116,111,110), r)
-P.Size = UDim2.new(0x1, 0x0, 0x0, 0x1E)
-P.BackgroundColor3 = Color3.fromRGB(0x96, 0x32, 0x32)
-P.Text = string.char(82,101,115,101,116,32,67,121,99,108,101,32,38,32,67,111,117,110,116,101,114)
-P.TextColor3 = e.TextWhite
-P.Font = Enum.Font.GothamBold
-Instance.new(string.char(85,73,67,111,114,110,101,114), P)
-local Q = 0x1
-local R = {
-{keyword = string.char(119,97,116,101,114), baseWait = 0x14},
-{keyword = string.char(115,117,103,97,114), baseWait = 0x2},
-{keyword = string.char(103,101,108,97,116,105,110), baseWait = 0x2D},
-{keyword = string.char(101,109,112,116,121), baseWait = 0x2}
+local WarningText = Instance.new("TextLabel", WarningFrame)
+WarningText.Size = UDim2.new(1, -10, 1, -10)
+WarningText.Position = UDim2.new(0, 5, 0, 5)
+WarningText.BackgroundTransparency = 1
+WarningText.Text = "⚠️ USE AT YOUR OWN RISK ⚠️\nWe are not responsible for any bans or account resets."
+WarningText.TextColor3 = Color3.fromRGB(255, 100, 100)
+WarningText.TextWrapped = true
+WarningText.Font = Enum.Font.GothamBold
+
+-- FLAGS & VARIABLES
+local Running = true
+local Flags = {BoxESP = false, TPNoClip = false, FakeName = false, InvScan = false, AutoCook = false, InstantInteract = false}
+local ESP_Boxes = {}
+local totalMasak = 0
+
+-- NAMA PALSU 
+local MyFakeName = "Rafa Admin"
+local MyFakeIGName = "Alexander Fake"
+
+-- ANIMASI TAB
+local function switchTab(activeBtn, activePage)
+    WarPage.Visible = false; FarmPage.Visible = false; InfoPage.Visible = false
+    WarTabBtn.BackgroundColor3 = Theme.TabDark; FarmTabBtn.BackgroundColor3 = Theme.TabDark; InfoTabBtn.BackgroundColor3 = Theme.TabDark
+    activePage.Visible = true
+    activeBtn.BackgroundColor3 = Theme.TopBar
+end
+
+WarTabBtn.MouseButton1Click:Connect(function() switchTab(WarTabBtn, WarPage) end)
+FarmTabBtn.MouseButton1Click:Connect(function() switchTab(FarmTabBtn, FarmPage) end)
+InfoTabBtn.MouseButton1Click:Connect(function() switchTab(InfoTabBtn, InfoPage) end)
+
+MinBtn.MouseButton1Click:Connect(function()
+    local shrink = TweenService:Create(MainFrame, TweenInfo.new(0.4, Enum.EasingStyle.Back, Enum.EasingDirection.In), {Size = UDim2.new(0, 0, 0, 0)})
+    shrink:Play()
+    shrink.Completed:Wait()
+    MainFrame.Visible = false
+    LogoButton.Visible = true
+    TweenService:Create(LogoButton, TweenInfo.new(0.4, Enum.EasingStyle.Back, Enum.EasingDirection.Out), {Size = UDim2.new(0, 50, 0, 50)}):Play()
+end)
+
+LogoButton.MouseButton1Click:Connect(function()
+    local shrinkLogo = TweenService:Create(LogoButton, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {Size = UDim2.new(0, 0, 0, 0)})
+    shrinkLogo:Play()
+    shrinkLogo.Completed:Wait()
+    LogoButton.Visible = false
+    MainFrame.Visible = true
+    TweenService:Create(MainFrame, TweenInfo.new(0.5, Enum.EasingStyle.Back, Enum.EasingDirection.Out), {Size = UDim2.new(0, 230, 0, 360)}):Play()
+end)
+
+CloseBtn.MouseButton1Click:Connect(function()
+    Running = false
+    for _, box in pairs(ESP_Boxes) do if box then box:Remove() end end
+    ESP_Boxes = {}
+    ScreenGui:Destroy()
+end)
+
+local function AddToggle(parent, name, flagName)
+    local btn = Instance.new("TextButton", parent)
+    btn.Size = UDim2.new(1, 0, 0, 35)
+    btn.BackgroundColor3 = Theme.TabDark
+    btn.Text = name .. " [OFF]"
+    btn.TextColor3 = Theme.TextWhite
+    btn.Font = Enum.Font.GothamSemibold
+    btn.TextSize = 10
+    Instance.new("UICorner", btn)
+    Instance.new("UIStroke", btn).Color = Color3.fromRGB(50, 60, 50)
+    
+    btn.MouseButton1Click:Connect(function()
+        Flags[flagName] = not Flags[flagName]
+        btn.TextColor3 = Flags[flagName] and Theme.Accent or Theme.TextWhite
+        btn.Text = name .. (Flags[flagName] and " [ON]" or " [OFF]")
+        btn.UIStroke.Color = Flags[flagName] and Theme.Accent or Color3.fromRGB(50, 60, 50)
+    end)
+    return btn
+end
+
+-- ==========================================
+-- [TAB 1: WAR / COMBAT]
+-- ==========================================
+AddToggle(WarPage, "Instant Interact", "InstantInteract")
+AddToggle(WarPage, "Inventory Scanner", "InvScan")
+AddToggle(WarPage, "Box ESP", "BoxESP")
+AddToggle(WarPage, "Blink TP [T]", "TPNoClip")
+
+-- ==========================================
+-- [TAB 2: AUTO FARM]
+-- ==========================================
+local CounterLabel = Instance.new("TextLabel", FarmPage)
+CounterLabel.Size = UDim2.new(1, 0, 0, 30)
+CounterLabel.BackgroundColor3 = Theme.TabDark
+CounterLabel.Text = "Masak: 0"
+CounterLabel.TextColor3 = Theme.Accent
+CounterLabel.Font = Enum.Font.GothamBold
+Instance.new("UICorner", CounterLabel)
+
+local ResetBtn = Instance.new("TextButton", FarmPage)
+ResetBtn.Size = UDim2.new(1, 0, 0, 30)
+ResetBtn.BackgroundColor3 = Color3.fromRGB(150, 50, 50)
+ResetBtn.Text = "Reset Cycle & Counter"
+ResetBtn.TextColor3 = Theme.TextWhite
+ResetBtn.Font = Enum.Font.GothamBold
+Instance.new("UICorner", ResetBtn)
+
+local currentCookStep = 1
+local cookSteps = {
+    {keyword = "water", baseWait = 20},
+    {keyword = "sugar", baseWait = 2},
+    {keyword = "gelatin", baseWait = 45},
+    {keyword = "empty", baseWait = 2} 
 }
-P.MouseButton1Click:Connect(function()
-B = 0x0
-O.Text = string.char(77,97,115,97,107,58,32,48)
-Q = 0x1
+
+ResetBtn.MouseButton1Click:Connect(function() 
+    totalMasak = 0 
+    CounterLabel.Text = "Masak: 0" 
+    currentCookStep = 1 
 end)
-local S = J(r, string.char(65,117,116,111,32,67,111,111,107,32,78,111,110,45,83,116,111,112), string.char(65,117,116,111,67,111,111,107))
-local T = game:GetService(string.char(86,105,114,116,117,97,108,73,110,112,117,116,77,97,110,97,103,101,114))
-if false then local Ga=string.char(83,67,89) end
+
+local CookToggleBtn = AddToggle(FarmPage, "Auto Cook Non-Stop", "AutoCook")
+
+local vim = game:GetService("VirtualInputManager")
 task.spawn(function()
-while y do
-task.wait(math.random(0x14, 0x28) / 0x64)
-if z.AutoCook then
-local U = R[Q]
-if false then local Ha=string.char(77,71,72) end
-local V = game.Players.LocalPlayer
-local char = V.Character
-local W = char and char:FindFirstChild(string.char(72,117,109,97,110,111,105,100))
-local X = nil
-for i = 0x1, 0x6 do
-if not z.AutoCook or not y then break end
-if V.Backpack then
-for _, v in pairs(V.Backpack:GetChildren()) do
-if string.find(string.lower(v.Name), U.keyword) then X = v; break end
-end
-end
-if not X and char then
-for _, v in pairs(char:GetChildren()) do
-if v:IsA(string.char(84,111,111,108)) and string.find(string.lower(v.Name), U.keyword) then X = v; break end
-end
-end
-if X then break end
-task.wait(0.5)
-end
-if X and W then
-task.wait(math.random(0x3, 0x7) / 0xa)
-W:EquipTool(X)
-task.wait(math.random(0x5, 0xa) / 0xa)
-if false then local Ia=0x15AB+0x160 end
-T:SendKeyEvent(true, Enum.KeyCode.E, false, game)
-task.wait(math.random(0x1, 0x3) / 0xa)
-T:SendKeyEvent(false, Enum.KeyCode.E, false, game)
-if U.keyword == string.char(101,109,112,116,121) then
-task.wait(math.random(0x2, 0x5) / 0xa)
-T:SendKeyEvent(true, Enum.KeyCode.E, false, game)
-task.wait(math.random(0x1, 0x3) / 0xa)
-T:SendKeyEvent(false, Enum.KeyCode.E, false, game)
-end
-local Y = U.baseWait + (math.random(0x5, 0x19) / 0xA)
-local Z = 0x0
-while Z < Y and z.AutoCook and y do
-local aa = math.random(0x4, 0x6) / 0xA
-task.wait(aa)
-Z = Z + aa
-end
-if z.AutoCook and y then
-if U.keyword == string.char(101,109,112,116,121) then
-B = B + 0x1
-O.Text = string.char(77,97,115,97,107,58,32) .. B
-end
-Q = Q + 0x1
-if Q > #R then Q = 0x1 end
-end
-else
-z.AutoCook = false
-S.Text = string.char(72,65,66,73,83,58,32) .. string.upper(U.keyword) .. string.char(32,91,79,70,70,93)
-S.TextColor3 = Color3.fromRGB(0xFF, 0x32, 0x32)
-task.wait(0x3)
-if not z.AutoCook then
-S.Text = string.char(65,117,116,111,32,67,111,111,107,32,78,111,110,45,83,116,111,112,32,91,79,70,70,93)
-S.TextColor3 = e.TextWhite
-end
-end
-end
-end
+    while Running do
+        task.wait(math.random(20, 40) / 100) 
+        if Flags.AutoCook then
+            local data = cookSteps[currentCookStep]
+            local p = game.Players.LocalPlayer
+            local char = p.Character
+            local hum = char and char:FindFirstChild("Humanoid")
+            local tool = nil
+            
+            for i = 1, 6 do
+                if not Flags.AutoCook or not Running then break end
+                if p.Backpack then
+                    for _, v in pairs(p.Backpack:GetChildren()) do
+                        if string.find(string.lower(v.Name), data.keyword) then tool = v; break end
+                    end
+                end
+                if not tool and char then
+                    for _, v in pairs(char:GetChildren()) do
+                        if v:IsA("Tool") and string.find(string.lower(v.Name), data.keyword) then tool = v; break end
+                    end
+                end
+                if tool then break end
+                task.wait(0.5) 
+            end
+            
+            if tool and hum then
+                task.wait(math.random(3, 7) / 10)
+                hum:EquipTool(tool)
+                task.wait(math.random(5, 10) / 10) 
+                vim:SendKeyEvent(true, Enum.KeyCode.E, false, game)
+                task.wait(math.random(1, 3) / 10)
+                vim:SendKeyEvent(false, Enum.KeyCode.E, false, game)
+
+                if data.keyword == "empty" then
+                    task.wait(math.random(2, 5) / 10)
+                    vim:SendKeyEvent(true, Enum.KeyCode.E, false, game)
+                    task.wait(math.random(1, 3) / 10)
+                    vim:SendKeyEvent(false, Enum.KeyCode.E, false, game)
+                end
+                
+                local humanWait = data.baseWait + (math.random(5, 25) / 10) 
+                local timeWaited = 0
+                while timeWaited < humanWait and Flags.AutoCook and Running do
+                    local miniWait = math.random(4, 6) / 10
+                    task.wait(miniWait)
+                    timeWaited = timeWaited + miniWait
+                end
+                
+                if Flags.AutoCook and Running then
+                    if data.keyword == "empty" then
+                        totalMasak = totalMasak + 1
+                        CounterLabel.Text = "Masak: " .. totalMasak
+                    end
+                    currentCookStep = currentCookStep + 1
+                    if currentCookStep > #cookSteps then currentCookStep = 1 end
+                end
+            else
+                Flags.AutoCook = false
+                CookToggleBtn.Text = "HABIS: " .. string.upper(data.keyword) .. " [OFF]"
+                CookToggleBtn.TextColor3 = Color3.fromRGB(255, 50, 50)
+                task.wait(3) 
+                if not Flags.AutoCook then
+                    CookToggleBtn.Text = "Auto Cook Non-Stop [OFF]"
+                    CookToggleBtn.TextColor3 = Theme.TextWhite
+                end
+            end
+        end
+    end
 end)
 
-
-
-local ba
-ba = game:GetService(string.char(80,114,111,120,105,109,105,116,121,80,114,111,109,112,116,83,101,114,118,105,99,101)).PromptShown:Connect(function(ca)
-if not y then if ba then ba:Disconnect() end return end
-if z.InstantInteract then pcall(function() if ca.HoldDuration > 0x0 then ca.HoldDuration = 0.05 end end) end
+-- ==========================================
+-- [LOGIC: COMBAT & STREAMER FEATURES]
+-- ==========================================
+local interactConn
+interactConn = game:GetService("ProximityPromptService").PromptShown:Connect(function(prompt)
+    if not Running then if interactConn then interactConn:Disconnect() end return end
+    if Flags.InstantInteract then pcall(function() if prompt.HoldDuration > 0 then prompt.HoldDuration = 0.05 end end) end
 end)
-local da = {}
+
+local Inv_Tags = {}
 task.spawn(function()
-if false then local Ja=0xE2B+0x97d end
-while y do
-task.wait(0x2)
-for _, V in pairs(game.Players:GetPlayers()) do
-if V ~= game.Players.LocalPlayer and V.Character then
-local ea = V.Character:FindFirstChild(string.char(72,101,97,100))
-if z.InvScan and ea then
-if not da[V] then
-local fa = Instance.new(string.char(66,105,108,108,98,111,97,114,100,71,117,105))
-fa.Name = string.char(73,110,118,84,97,103)
-fa.Size = UDim2.new(0x0, 0xfa, 0x0, 0x96)
-fa.StudsOffset = Vector3.new(0x0, 0x4, 0x0)
-fa.AlwaysOnTop = true
-fa.Adornee = ea
-fa.Parent = b
-local ga = Instance.new(string.char(84,101,120,116,76,97,98,101,108), fa)
-ga.Size = UDim2.new(0x1, 0x0, 0x1, 0x0)
-ga.BackgroundTransparency = 0x1
-ga.TextColor3 = e.Accent
-ga.Font = Enum.Font.GothamBold
-ga.TextSize = 0x9
-ga.TextStrokeTransparency = 0.5
-ga.TextYAlignment = Enum.TextYAlignment.Top
-da[V] = fa
-if false then local Ka=0x1C69+0x1D2E end
-end
-pcall(function()
-local ha = string.char(78,111,110,101); local ia = {}
-for _, v in pairs(V.Character:GetChildren()) do if v:IsA(string.char(84,111,111,108)) then ha = v.Name end end
-for _, v in pairs(V.Backpack:GetChildren()) do table.insert(ia, "• "..v.Name) end
-if da[V] and da[V]:FindFirstChild(string.char(84,101,120,116,76,97,98,101,108)) then
-da[V].TextLabel.Text = string.char(91,72,69,76,68,93,58,32)..ha.."\n\n[INVENTORY]:\n"..table.concat(ia, "\n")
-end
-end)
-elseif not z.InvScan or not ea then
-if da[V] then da[V]:Destroy(); da[V] = nil end
-end
-end
-end
-for V, tag in pairs(da) do
-if not V or not V.Parent then if tag then tag:Destroy() end; da[V] = nil end
-end
-end
-end)
-if false then local La=0x683 end
+    while Running do
+        task.wait(2)
+        for _, p in pairs(game.Players:GetPlayers()) do
+            if p ~= game.Players.LocalPlayer and p.Character then
+                local head = p.Character:FindFirstChild("Head")
+                if Flags.InvScan and head then
+                    if not Inv_Tags[p] then
+                        local invTag = Instance.new("BillboardGui")
+                        invTag.Name = "InvTag"
+                        invTag.Size = UDim2.new(0, 250, 0, 150)
+                        invTag.StudsOffset = Vector3.new(0, 4, 0)
+                        invTag.AlwaysOnTop = true
+                        invTag.Adornee = head
+                        invTag.Parent = ScreenGui
 
-local ja = -0x6
-local ka = 0.15
-local la
-la = game:GetService(string.char(85,115,101,114,73,110,112,117,116,83,101,114,118,105,99,101)).InputBegan:Connect(function(ma, na)
-if not y then if la then la:Disconnect() end return end
-if not na and z.TPNoClip and ma.KeyCode == Enum.KeyCode.T then
-local V = game.Players.LocalPlayer
-local char = V.Character
-local oa = char and char:FindFirstChild(string.char(72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116))
-if oa then
-local pa = oa.CFrame * CFrame.new(0x0, 0x0, ja)
-if false then local Ma=0x2287+0x145 end
-local qa = TweenInfo.new(ka, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
-local ra = a:Create(oa, qa, {CFrame = pa})
-ra:Play()
-end
-end
+                        local lbl = Instance.new("TextLabel", invTag)
+                        lbl.Size = UDim2.new(1, 0, 1, 0)
+                        lbl.BackgroundTransparency = 1
+                        lbl.TextColor3 = Theme.Accent
+                        lbl.Font = Enum.Font.GothamBold
+                        lbl.TextSize = 9
+                        lbl.TextStrokeTransparency = 0.5
+                        lbl.TextYAlignment = Enum.TextYAlignment.Top
+                        Inv_Tags[p] = invTag
+                    end
+                    pcall(function()
+                        local held = "None"; local inv = {}
+                        for _, v in pairs(p.Character:GetChildren()) do if v:IsA("Tool") then held = v.Name end end
+                        for _, v in pairs(p.Backpack:GetChildren()) do table.insert(inv, "• "..v.Name) end
+                        if Inv_Tags[p] and Inv_Tags[p]:FindFirstChild("TextLabel") then
+                            Inv_Tags[p].TextLabel.Text = "[HELD]: "..held.."\n\n[INVENTORY]:\n"..table.concat(inv, "\n")
+                        end
+                    end)
+                elseif not Flags.InvScan or not head then
+                    if Inv_Tags[p] then Inv_Tags[p]:Destroy(); Inv_Tags[p] = nil end
+                end
+            end
+        end
+        for p, tag in pairs(Inv_Tags) do
+            if not p or not p.Parent then if tag then tag:Destroy() end; Inv_Tags[p] = nil end
+        end
+    end
 end)
-local sa
-sa = game:GetService(string.char(82,117,110,83,101,114,118,105,99,101)).RenderStepped:Connect(function()
-if not y then if sa then sa:Disconnect() end return end
-if not z.BoxESP then for _, box in pairs(A) do box.Visible = false end return end
-for _, V in pairs(game.Players:GetPlayers()) do
-if V ~= game.Players.LocalPlayer and V.Character and V.Character:FindFirstChild(string.char(72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116)) then
-local ta = V.Character.HumanoidRootPart
-local ua, va = workspace.CurrentCamera:WorldToViewportPoint(ta.Position)
-if va then
-if not A[V] then
-A[V] = Drawing.new(string.char(83,113,117,97,114,101)); A[V].Thickness = 1.5; A[V].Color = e.Accent
-end
-local wa = (workspace.CurrentCamera:WorldToViewportPoint(ta.Position + Vector3.new(0x0, 0x3, 0x0)).Y - workspace.CurrentCamera:WorldToViewportPoint(ta.Position + Vector3.new(0x0, -3.5, 0x0)).Y)
-A[V].Size = Vector2.new(wa / 1.5, wa)
-if false then local Na=0xe96 end
-A[V].Position = Vector2.new(ua.X - A[V].Size.X/0x2, ua.Y - A[V].Size.Y/0x2)
-A[V].Visible = true
-elseif A[V] then
-if false then local Oa=string.char(73,71,70) end
-A[V].Visible = false
-end
-end
-if false then local Pa=0xd9c end
-end
+
+
+-- BLINK TP & ESP
+local blinkDistance = -6 
+local dashTime = 0.15 
+
+local inputConn
+inputConn = game:GetService("UserInputService").InputBegan:Connect(function(input, processed)
+    if not Running then if inputConn then inputConn:Disconnect() end return end
+    if not processed and Flags.TPNoClip and input.KeyCode == Enum.KeyCode.T then
+        local p = game.Players.LocalPlayer
+        local char = p.Character
+        local hrp = char and char:FindFirstChild("HumanoidRootPart")
+        if hrp then 
+            local targetCFrame = hrp.CFrame * CFrame.new(0, 0, blinkDistance)
+            local tweenInfo = TweenInfo.new(dashTime, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
+            local dashTween = TweenService:Create(hrp, tweenInfo, {CFrame = targetCFrame})
+            dashTween:Play()
+        end
+    end
+end)
+
+local renderConn
+renderConn = game:GetService("RunService").RenderStepped:Connect(function()
+    if not Running then if renderConn then renderConn:Disconnect() end return end
+    if not Flags.BoxESP then for _, box in pairs(ESP_Boxes) do box.Visible = false end return end
+    
+    for _, p in pairs(game.Players:GetPlayers()) do
+        if p ~= game.Players.LocalPlayer and p.Character and p.Character:FindFirstChild("HumanoidRootPart") then
+            local root = p.Character.HumanoidRootPart
+            local pos, onScreen = workspace.CurrentCamera:WorldToViewportPoint(root.Position)
+            if onScreen then
+                if not ESP_Boxes[p] then
+                    ESP_Boxes[p] = Drawing.new("Square"); ESP_Boxes[p].Thickness = 1.5; ESP_Boxes[p].Color = Theme.Accent
+                end
+                local sizeY = (workspace.CurrentCamera:WorldToViewportPoint(root.Position + Vector3.new(0, 3, 0)).Y - workspace.CurrentCamera:WorldToViewportPoint(root.Position + Vector3.new(0, -3.5, 0)).Y)
+                ESP_Boxes[p].Size = Vector2.new(sizeY / 1.5, sizeY)
+                ESP_Boxes[p].Position = Vector2.new(pos.X - ESP_Boxes[p].Size.X/2, pos.Y - ESP_Boxes[p].Size.Y/2)
+                ESP_Boxes[p].Visible = true
+            elseif ESP_Boxes[p] then
+                ESP_Boxes[p].Visible = false
+            end
+        end
+    end
 end)
