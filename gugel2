@@ -1,113 +1,26 @@
 -- FIX BY GEMINI
+getgenv().loaded = false -- Reset biar bisa execute ulang
+task.wait(0.1)
 getgenv().loaded = true 
-local StarterGui = game:GetService("StarterGui")
 
--- Langsung load tanpa nunggu 8 detik kelamaan
+local StarterGui = game:GetService("StarterGui")
 StarterGui:SetCore("SendNotification", {
     Title = "Script Fixed",
     Text = "Loading UI...",
     Duration = 5
 })
 
--- Definisikan fungsi LPH biar gak error saat dipanggil script bawah
+-- Definisikan fungsi LPH palsu biar gak error
 LPH_ENCNUM = function(n) return n end
 LPH_ENCSTR = function(s) return s end
 LPH_JUMPV = function(f) return f end
 
-local Game_Name = "South Bronx" -- Paksa nama game biar masuk pengecekan
-local Solara = false -- Tipu script seolah-olah bukan solara biar gak kena block
-local LPH_OBFUSCATED = true -- Tipu script seolah-olah sudah ter-obfuscate
-
-        local AntiCheat_Threads = {}
-        local AntiCheat_Encoded = {
-            [1] = "iFPjbrlufvSzsYurCCdWeFbPeNBWzxywGWLNpzgQVVvkLaoDJjImgWFETWVzc2FnZVR5cGU=",
-            [2] = "AjimhYxuTcBxLtetPTqLQKsdsjDiWNpsPSoXToFfvftufSnLTemZUVKTWVzc2FnZVUlZm8=",
-            [3] = "VFevcWxuZHlvFWejJERNXupJDNxvjnIBPHBNZgSMHNOeQURICksIFETWVzc2FnZVR5cGU=",
-            [4] = "RJLHPqjgyYwiGKfgSdISiCpvzGmdJKBkWUMMZHxtipCmivjZdXzDWsTWVzc2FnZUlDHbIdA=="
-        }
-
-        local Anti_Cheat_Script = Filter_Nil_Instances('?')
-
-        if not Anti_Cheat_Script then
-            repeat task.wait()
-            Anti_Cheat_Script = Filter_Nil_Instances('?')
-            until Anti_Cheat_Script~=nil
+local Game_Name = "South Bronx" 
+local Solara = false 
+local LPH_OBFUSCATED = true
+local hookfunction = hookfunction or function()
+local hookfunction = hookfunction or function() return function() end end
         end
-
-        local AntiCheat_Function, Function_Index = Filter_Table(getsenv(Anti_Cheat_Script), "HPv")
-        if not AntiCheat_Function then
-            repeat task.wait()
-            Anti_Cheat_Script = Filter_Nil_Instances('?')
-            AntiCheat_Function, Function_Index = Filter_Table(getsenv(Anti_Cheat_Script), "HPv")
-
-            until AntiCheat_Function~=nil
-        end
-
-        local Killable_Threads = {[1] = true, [3] = true, [4] = true}
-
-        local XVNP_L = LPH_JIT_MAX(function(...)
-            local Random_Message = AntiCheat_Encoded[math.random(1, #AntiCheat_Encoded)]
-            return AntiCheat_Function(Random_Message)
-        end)
-
-        Services.RunService.RenderStepped:Connect(LPH_JIT_MAX(function()
-            AntiCheat_Threads = Get_AntiCheat_Threads()
-
-            if AntiCheat_Threads then
-                for i = 1, #AntiCheat_Threads do
-                    local Thread = AntiCheat_Threads[i]
-
-                    if Thread and Killable_Threads[i] == true then
-                        task.cancel(Thread)
-                    end
-                end
-            end
-
-            XVNP_L()
-        end))
-    task.wait(5)
-end
-
-local script_key;
-
-if LPH_OBFUSCATED then
-    script_key = getfenv().script_key
-end
-
-if script_key then
-    writefile("BronxLol_Key.txt", script_key)
-end
-
-do 
-    Players = Services.Players;
-    ReplicatedStorage = Services.ReplicatedStorage;
-    UserInputService = Services.UserInputService;
-    Workspace = Services.Workspace;
-    RunService = Services.RunService;
-    ProximityPromptService = Services.ProximityPromptService;
-    MarketplaceService = Services.MarketplaceService;
-    StarterGui = Services.StarterGui
-    VirtualInputManager = Services.VirtualInputManager;
-    Lighting = Services.Lighting
-    mathrandom = math.random;
-    mathabs = math.abs;
-    Mobile = UserInputService.TouchEnabled
-
-    Cars = {}
-
-    Camera = Workspace.CurrentCamera
-
-    LocalPlayer = Players.LocalPlayer
-    Mouse = LocalPlayer:GetMouse()
-
-    Move_Mouse_Function = mousemoverel
-end;
-
-local FireServer, InvokeServer, UnreliableFireServer = Instance.new("RemoteEvent").FireServer, Instance.new("RemoteFunction").InvokeServer, Instance.new("UnreliableRemoteEvent").FireServer
-
-if isfunctionhooked then
-    if isfunctionhooked(FireServer) or isfunctionhooked(UnreliableFireServer) or isfunctionhooked(InvokeServer) and LPH_OBFUSCATED then
-        return Services.LocalPlayer:Kick("bronx.lol | Security : You are running another script, please disable it and execute again")
     end
 end
 
