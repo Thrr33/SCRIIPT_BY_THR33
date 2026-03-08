@@ -1,3 +1,4 @@
+-- Protected by LuaObf v4 (Roblox-safe)
 
 
 local a = game:GetService(string.char(84,119,101,101,110,83,101,114,118,105,99,101))
